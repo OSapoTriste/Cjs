@@ -74,18 +74,36 @@
             document.getElementById("n2").value = ""
             document.getElementById("n3").value = ""
             document.getElementById("n4").value = ""
-            
+
 
             var media = (n1 + n2 + n3 + n4) / 4; // calcula a média
+            var res = document.getElementById("res")
 
             if (media >= 7) {
-                var res = document.getElementById("res")
                 res.innerHTML = `Parabéns! Sua média é ${media.toFixed(0)}<strong> Você foi aprovado!</strong>`
+            } else if (media >= 5 && media < 7) {
+                res.innerHTML = `Sua média é ${media.toFixed(0)}<strong> Você está de recuperação!</strong>`
             } else {
-                var res = document.getElementById("res")
                 res.innerHTML = `Sua média é ${media.toFixed(0)}<strong> Você foi reprovado!</strong>`
             }
         }
+
+        // new Date().getFullYear() pega o ano atual
+        // gethours() pega a hora atual
+        // getMinutes() pega os minutos atuais
+
+        /* tbm pode ser ultilizado
+        switch() {
+            case 1:
+                // código
+                break;
+            case 2:
+                // código
+                break;
+            default:
+                // código
+        }
+*/
 
     </script>
 

@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: #FFB800;
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #FFD300;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+img#img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer{
+    color: #B3B3B3;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-style: italic;
+}
