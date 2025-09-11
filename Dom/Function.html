@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font: normal 10pt arial;
+        }
+
+        div#area {
+            background: blue;
+            width: 180px;
+            height: 100x;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20pt;
+            border-radius: 15px;
+            margin: 20px;
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="area">
+        Hello sister
+    </div>
+
+    <script>
+        var a = document.getElementById("area");
+        
+        a.addEventListener("click", clicar);
+        a.addEventListener("mouseenter", entrar);
+        a.addEventListener("mouseout", sair);
+
+        function clicar() {
+            a.innerText = "Clicou!";
+        }
+        function entrar() {
+            a.innerText = "Entrou!";
+        }
+        function sair() {
+            a.innerText = "Saiu!";
+        }
+    </script>
+
+</body>
+
+</html>

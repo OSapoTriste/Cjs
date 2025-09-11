@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+
+<body>
+    <h1>Que saco velho</h1>
+    <p>Danese isso parça</p>
+    <p id="demo"></p>
+
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font: arial;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+    <script>
+
+        let name = prompt("Qual o seu nome?")  // Pergunta o nome do usuário e salva na variável 'name'
+        alert("Olá " + name + ", seja bem vindo ao meu site!")  // Exibe uma mensagem de boas-vindas usando o nome fornecido
+        var food = prompt("Oque vc quer comer?")  // Pergunta oque o usuário quer comer e salva na variável 'food'
+        document.getElementById("demo").innerHTML = "Voçe quer comer " + food
+
+        // document (cria um documento) getElementById (pega o elemento pelo id) innerHTML (insere um html dentro do elemento)
+
+    </script>
+
+</body>
+
+</html>

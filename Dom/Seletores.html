@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos no Dom</title>
+
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Iniciando no Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <div name="msgs">Chora mais</div>
+    <div class="cls" >Tira que eu vou cagar</div>
+
+    <script>
+        var p1 = document.getElementsByTagName("p")[0]; // Pega o primeiro elemento <p> do documento
+        var corpo = document.body; // Pega o elemento <body> do documento
+        //            corpo.style.background = "blue"; // Muda a cor de fundo do corpo para azul
+        p1.style.color = "red"; // Muda a cor do texto do primeiro <p> para vermelho
+        document.writeln(p1.innerText); // Escreve o texto do primeiro <p> na página
+
+
+        var p2 = document.getElementsByTagName("p")[1]; // Pega o segundo elemento <p> do documento
+        //        document.writeln(p2.innerText); // Escreve o texto do segundo <p> na página sem tags HTML
+        document.writeln(p2.innerHTML); // Escreve o conteúdo HTML do segundo <p> na página com tags HTML
+
+        /*
+        var msg = document.getElementById("msg"); // Pega o elemento com id "msg"
+        msg.style.color= "blue"; // Muda a cor de fundo do elemento "msg
+
+        var msgs = document.getElementsByName("msgs")[0]; // Pega o primeiro elemento com name "msgs"
+        msgs.style.color = "green"; // Muda a cor do texto do elemento "msgss" para verde
+
+        var cls = document.getElementsByClassName("cls")[0]; // Pega o primeiro elemento com class "cls"
+        cls.style.color = "orange"; // Muda a cor do texto do elemento "cls
+        */
+
+        var d = document.querySelector("div#msg"); // Pega o primeiro elemento com class "cls"
+        d.style.color = "orange"; // Muda a cor do texto do elemento "cls
+        // # = id | . = class
+
+    </script>
+
+</body>
+
+</html>

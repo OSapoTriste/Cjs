@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+
+<body>
+    <h1>Que saco velho</h1>
+    <p>Danese isso parça</p>
+    <p id="demo"></p>
+
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font: arial;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+    <script>
+        // document (cria um documento) getElementById (pega o elemento pelo id) innerHTML (insere um html dentro do elemento)
+
+        let n1 = Number.parseInt(prompt("Digite um número:"))
+        let n2 = Number.parseInt(prompt(`Digite outro número:`))
+        var s = n1 + n2
+        alert(`A soma entre os numeros ${n1} e ${n2} é igual a ${s}`)
+        document.getElementById("demo").innerHTML = `A soma entre os numeros ${n1} e ${n2} é igual a ${s}`
+
+        // parseInt() -> converte uma string em um número inteiro
+        // parseFloat() -> converte uma string em um número decimal
+        // toFixed() -> limita o número de casas decimais (após a vírgula)
+        // replace() -> substitui um caractere por outro (ex: vírgula por ponto)
+        // toLocatedString('pt-BR', {style: 'currency', currency: 'BRL'}) -> formata um número como moeda (ex: R$ 1000,50 para R$ 1,000.50)
+        // Number() -> converte uma string em um número (inteiro ou decimal)
+        // string() -> converte um número em uma string
+        // toString() -> converte um número em uma string
+        // ${} precisa de ``
+        // toUpperCase()
+        // toLowerCase
+        // % -> resto da divisão
+        // ** -> potência
+        // n1++ -> incrementa 1
+        // ! -> negação
+        // && -> e
+        // || -> ou
+
+    </script>
+
+</body>
+
+</html>
