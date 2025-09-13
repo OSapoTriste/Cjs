@@ -1,9 +1,10 @@
 function carregar() {
-    var hr = document.getElementById("hr")
-    var img = document.getElementById("img")
-    var data = new Date()
-    var hora = data.getHours()
-    var min = data.getMinutes()
+    const hr = document.getElementById("hr")
+    const img = document.getElementById("img")
+    const data = new Date()
+    const hora = data.getHours()
+    const min = data.getMinutes().toString().padStart(2, '0') //Adiciona um zero à esquerda se necessário
+
     hr.innerHTML = `Agora são ${hora}:${min}`
 
     if (hora >= 4 && hora < 12) {
@@ -20,3 +21,5 @@ function carregar() {
         document.body.style.background = "black"
     }
 }
+
+setInterval(carregar, 1000);
